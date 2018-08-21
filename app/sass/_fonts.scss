@@ -1,4 +1,8 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", 'bold');
+@include font-face("Alegreya", "../fonts/Alegreya-Regular");
+@include font-face("Alegreya", "../fonts/Alegreya-Bold", bold);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay-Regular");
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay-Bold", bold);
+@include font-face("ProximaNova", "../fonts/ProximaNova-Regular");
+@include font-face("scriptina", "../fonts/scriptina");

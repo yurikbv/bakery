@@ -1,0 +1,85 @@
+@include reset;
+
+header{
+  text-align: center;
+  background: #3f403c url("../img/header-back.jpg") center top no-repeat;
+}
+
+.header__inner{
+  background-color: rgba(#56534c,.6);
+}
+
+.header{
+  @include wrapper;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  align-items: center;
+  .logo{
+    font-family: Scriptina,sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: 9px;
+    padding-bottom: 10px;
+  }
+}
+
+.menu__item{
+  display: inline-block;
+  margin: 0 15px;
+  .tilda{
+    position: relative;
+    left: 15px;
+  }
+}
+
+.menu__link{
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Alegreya,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 4.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(white,.5);
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px;
+  }
+}
+
+.socials{
+  margin-top: 5px;
+}
+
+.socials__link{
+  display: inline-block;
+  svg{
+    transition: all 0.2s ease-in-out;
+    fill: white;
+    height: 16px;
+    margin-left: 18px;
+  }
+  &:hover{
+    svg{
+      transition: all 0.2s ease-in-out;
+
+    }
+    .socials__twitter{
+      fill: #02ABED;
+    }
+    .socials__facebook{
+      fill: #4964A2;
+    }
+    .socials__instagram{
+      fill: black;
+    }
+  }
+}

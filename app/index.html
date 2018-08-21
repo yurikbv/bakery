@@ -25,17 +25,39 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	
 	<link rel="stylesheet" href="css/style.min.css" type="text/css">
-	<link rel="preload" href="fonts/Alegreya-Regular.ttf" as="font" type="font/ttf" crossorigin>
-	<link rel="preload" href="fonts/Alegreya-Bold.ttf" as="font" type="font/ttf" crossorigin>
-	<link rel="preload" href="fonts/PlayfairDisplay-Regular.ttf" as="font" type="font/ttf" crossorigin>
-	<link rel="preload" href="fonts/PlayfairDisplay-Bold.ttf" as="font" type="font/ttf" crossorigin>
-	<link rel="preload" href="fonts/ProximaNova-Regular.ttf" as="font" type="font/ttf" crossorigin>
-	<link rel="preload" href="fonts/scriptina.ttf" as="font" type="font/ttf" crossorigin>
+	<link rel="preload" href="fonts/Alegreya-Regular.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="fonts/Alegreya-Bold.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="fonts/PlayfairDisplay-Regular.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="fonts/PlayfairDisplay-Bold.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="fonts/ProximaNova-Regular.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="fonts/scriptina.woff" as="font" type="font/woff" crossorigin>
 </head>
 
 <body>
 
-
+<header>
+  <div class="header__inner">
+    <section class="header">
+        <h1 class="logo">Gustoso</h1>
+        <ul class="menu">
+          <li class="menu__item"><a href="" class="menu__link">Welcome</a><span class="tilda">~</span></li>
+          <li class="menu__item"><a href="" class="menu__link">Menu</a><span class="tilda">~</span></li>
+          <li class="menu__item"><a href="" class="menu__link">Reservation</a><span class="tilda">~</span></li>
+          <li class="menu__item"><a href="" class="menu__link">News</a><span class="tilda">~</span></li>
+          <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+        </ul>
+        <div class="socials">
+          <a href="" class="socials__link"><svg class="socials__twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612"><path d="M612 116.258a250.714 250.714 0 0 1-72.088 19.772c25.929-15.527 45.777-40.155 55.184-69.411-24.322 14.379-51.169 24.82-79.775 30.48-22.907-24.437-55.49-39.658-91.63-39.658-69.334 0-125.551 56.217-125.551 125.513 0 9.828 1.109 19.427 3.251 28.606-104.326-5.24-196.835-55.223-258.75-131.174-10.823 18.51-16.98 40.078-16.98 63.101 0 43.559 22.181 81.993 55.835 104.479a125.556 125.556 0 0 1-56.867-15.756v1.568c0 60.806 43.291 111.554 100.693 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.199 117.253 87.194-42.947 33.654-97.099 53.655-155.916 53.655-10.134 0-20.116-.612-29.944-1.721 55.567 35.681 121.536 56.485 192.438 56.485 230.948 0 357.188-191.291 357.188-357.188l-.421-16.253c24.666-17.593 46.005-39.697 62.794-64.861z"/></svg></a>
+          <a href="" class="socials__link"><svg class="socials__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.124 96.123"><path d="M72.089.02L59.624 0C45.62 0 36.57 9.285 36.57 23.656v10.907H24.037a1.96 1.96 0 0 0-1.96 1.961v15.803a1.96 1.96 0 0 0 1.96 1.96H36.57v39.876a1.96 1.96 0 0 0 1.96 1.96h16.352a1.96 1.96 0 0 0 1.96-1.96V54.287h14.654a1.96 1.96 0 0 0 1.96-1.96l.006-15.803a1.963 1.963 0 0 0-1.961-1.961H56.842v-9.246c0-4.444 1.059-6.7 6.848-6.7l8.397-.003a1.96 1.96 0 0 0 1.959-1.96V1.98A1.96 1.96 0 0 0 72.089.02z"/></svg></a>
+          <a href="" class="socials__link"><svg class="socials__instagram" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 97.395 97.395" style="enable-background:new 0 0 97.395 97.395;" xml:space="preserve">
+<g>
+	<path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895   V12.5C0,5.09,5.624,0,12.501,0L12.501,0z M70.948,10.821c-2.412,0-4.383,1.972-4.383,4.385v10.495c0,2.412,1.971,4.385,4.383,4.385   h11.008c2.412,0,4.385-1.973,4.385-4.385V15.206c0-2.413-1.973-4.385-4.385-4.385H70.948L70.948,10.821z M86.387,41.188h-8.572   c0.811,2.648,1.25,5.453,1.25,8.355c0,16.2-13.556,29.332-30.275,29.332c-16.718,0-30.272-13.132-30.272-29.332   c0-2.904,0.438-5.708,1.25-8.355h-8.945v41.141c0,2.129,1.742,3.872,3.872,3.872h67.822c2.13,0,3.872-1.742,3.872-3.872V41.188   H86.387z M48.789,29.533c-10.802,0-19.56,8.485-19.56,18.953c0,10.468,8.758,18.953,19.56,18.953   c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z"/>
+</g>
+</svg></a>
+        </div>
+    </section>
+  </div>
+</header>
 
 <script src="js/scripts.min.js"></script>
 </body>
