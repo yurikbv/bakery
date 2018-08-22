@@ -1,0 +1,68 @@
+.pancakes{
+  background: #ecece7 url("../img/middle-back.jpg") no-repeat center top;
+}
+
+.pancakes__inner{
+  @include wrapper;
+  text-align: center;
+}
+
+.pancakes__block{
+  margin-top: 140px;
+  display: inline-block;
+  width: 965px;
+  position: relative;
+  right: 50px;
+}
+
+.pancakes__corner{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.pancakes__photo{
+
+}
+
+.pancakes__about{
+  background-color: #f4f2f0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 420px;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.pancakes__title{
+  font-family: Alegreya,sans-serif;
+  font-size: 48px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  margin-top: 86px;
+}
+
+.pancakes__description{
+  font-family: Alegreya,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #a47d5e;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-top: 16px;
+}
+
+.pancakes__text{
+  line-height: 24px;
+  letter-spacing: 1.4px;
+  margin-top: 52px;
+}
+
+.pancakes__ready{
+  width: 100px;
+}
+
+

@@ -1,0 +1,153 @@
+.art__outer{
+  background-color: #fdfcfa;
+}
+.art{
+  @include wrapper;
+}
+
+.art__inner{
+  @include row-flex;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.art__about,.art__images{
+  @include col;
+  @include size(6);
+  @include size-sm(12);
+}
+
+.art__about{
+  text-align: center;
+  margin-top: 110px;
+}
+
+.art__title{
+  font-family: Alegreya,sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.art__slogan{
+  display: inline-block;
+  font-family: Alegreya,sans-serif;
+  color: #a47d5e;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.art__text{
+  max-width: 500px;
+  display: inline-block;
+  line-height: 24px;
+  letter-spacing: 1.4px;
+  margin-top: 55px;
+}
+
+.cook{
+  margin-top: 35px;
+}
+
+.cook__title{
+  font-family: Alegreya,sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+.cook__chef{
+  margin-top: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cook__first-name,.cook__surname{
+  font-family: Alegreya,sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  border-top: 1px solid #d7d5ca;
+  border-bottom: 1px solid #d7d5ca;
+  padding: 12px 20px;
+}
+
+.cook__testimonial{
+  position: relative;
+  display: inline-block;
+  font-family: Scriptina,sans-serif;
+  color: #a47d5e;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  width: 270px;
+  margin-top: 40px;
+  .quote{
+    position: absolute;
+    font-family: "Times New Roman PSMT",sans-serif;
+    color: $color-default;
+    opacity: 0.5;
+    letter-spacing: 1.5px;
+    font-size: 60px;
+    line-height: 30px;
+  }
+  .quote--left{
+    left: -65px;
+  }
+  .quote--right{
+    right: -65px;
+    top: 70px;
+  }
+}
+
+.cook__photo{
+  margin: 0 15px;
+}
+
+.art__images{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  position: relative;
+}
+
+.art__item{
+  @include col;
+  @include size(6);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.art__border{
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  right: 14px;
+  bottom: 6px;
+  border: 5px solid #ffffff;
+}
+
+.art__figure,.art__figure-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.art__figure-text{
+  text-align: center;
+  width: 160px;
+  display: inline-block;
+  color: #c9b176;
+  font-family: Alegreya,sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-bottom: 18px;
+}
+

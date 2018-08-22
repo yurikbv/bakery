@@ -1,12 +1,13 @@
 @include reset;
 
 header{
+  color: #ffffff;
   text-align: center;
   background: #3f403c url("../img/header-back.jpg") center top no-repeat;
 }
 
 .header__inner{
-  background-color: rgba(#56534c,.6);
+  background-color: rgba($color-default,.53);
 }
 
 .header{
@@ -14,7 +15,6 @@ header{
   height: 70px;
   display: flex;
   justify-content: space-between;
-  color: #ffffff;
   align-items: center;
   .logo{
     font-family: Scriptina,sans-serif;
@@ -82,4 +82,72 @@ header{
       fill: black;
     }
   }
+}
+
+.about__inner{
+  @include wrapper;
+  padding-bottom: 214px;
+}
+
+.about__title{
+  display: block;
+  font-family: 'PlayfairDisplay',sans-serif;
+  font-weight: bold;
+  font-size: 92px;
+  letter-spacing: 6.5px;
+  margin-top: 237px;
+  text-shadow: 0 1px 0 #3d3029;
+}
+
+.about__line{
+  display: inline-block;
+  margin-top: 100px;
+}
+
+.about__slogan{
+  font-family: $font-default;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+  margin: 50px auto 0;
+  max-width: 550px;
+}
+
+.about__menu{
+  display: inline-block;
+  padding: 11px 47px;
+  font-family: Alegreya,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4.2px;
+  color: #ffffff;
+  margin-top: 65px;
+  background-color: rgba($color-default,.53);
+  border: 1px dashed #9e9c93;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 5px;
+  }
+}
+
+.logo__wheel,.wheel__back{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.logo__wheel{
+  z-index: 2;
+}
+
+.wheel__back{
+  display: inline-block;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }

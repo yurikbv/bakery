@@ -7,7 +7,8 @@ body{
   min-width: 320px;
   position: relative;
   line-height: 24px;
-  font-family: $color-default;
+  font-family: $font-default;
+  color: $color-default;
   overflow-x: hidden;
   opacity: 1;
 }
