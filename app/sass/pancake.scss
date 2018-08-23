@@ -1,10 +1,13 @@
 .pancakes{
   background: #ecece7 url("../img/middle-back.jpg") no-repeat center top;
+  background-size: cover;
+
 }
 
 .pancakes__inner{
   @include wrapper;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .pancakes__block{
@@ -15,25 +18,40 @@
   right: 50px;
 }
 
+
 .pancakes__corner{
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-.pancakes__photo{
-
+.pancakes__rating{
+  position: absolute;
+  left: 28px;
+  top: 185px;
+  img{
+    width: 22px;
+    margin-bottom: 9px;
+  }
 }
 
 .pancakes__about{
-  background-color: #f4f2f0;
+  background: #f4f2f0 url("../img/Vektor-Smartobjekt_windmill.png") no-repeat right bottom;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
   left: 420px;
   text-align: left;
-  padding-left: 60px;
+}
+
+.pancakes__about-inner{
+  position: relative;
+  height: 100%;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .pancakes__title{
@@ -41,7 +59,7 @@
   font-size: 48px;
   letter-spacing: 1.2px;
   font-weight: 700;
-  margin-top: 86px;
+  padding-top: 86px;
 }
 
 .pancakes__description{
@@ -61,8 +79,88 @@
   margin-top: 52px;
 }
 
-.pancakes__ready{
-  width: 100px;
+.pancakes__slider{
+  position: relative;
+  margin-top: auto;
+  height: 90px;
+  padding: 0 32px 40px;
 }
 
+.slider__button{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 1px solid $color-default;
+  border-radius: 50%;
+  top: 28px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.slider__button--left{
+  left: 0;
+}
+
+.slider__button--right{
+  right: 0;
+}
+
+.slider__gallery{
+  overflow: hidden;
+}
+
+.slider__container{
+  position: absolute;
+  z-index: 2;
+}
+
+.slider__item{
+  display: inline-block;
+}
+
+.slider__link{
+  margin: 0 14px;
+}
+
+.slider__image{
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.pancakes__ready{
+  font-family: Alegreya,sans-serif;
+  position: absolute;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  right: -102px;
+  top: -43px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  background: #f4f2f0 url("../img/Vektor-Smartobjekt-yard.png") no-repeat right bottom;
+  padding-bottom: 27px;
+  box-shadow: 0 25px 54px rgba(105, 80, 58, 0.45);
+}
+
+.ready__title{
+  font-size: 18px;
+  color: #a47d5e;
+  text-transform: uppercase;
+  margin-top: 28px;
+}
+
+.ready__time{
+  color: #dfc691;
+  font-size: 92px;
+  margin-top: 42px;
+  letter-spacing: 6px;
+}
+
+.ready__minutes{
+  color: #979285;
+  margin-top: 32px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
 

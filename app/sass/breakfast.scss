@@ -1,0 +1,150 @@
+.breakfast{
+  background:url("../img/middle2-back.jpg") #3b3e4e  no-repeat center top ;
+  background-size: cover;
+}
+
+.breakfast__inner{
+  @include wrapper;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 100px 0 60px;
+}
+
+.breakfast__price{
+  text-align: center;
+  margin-left: 110px;
+}
+.breakfast__title,.breakfast__open{
+  font-family: Alegreya,sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.breakfast__title{
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.breakfast__open{
+  color: #c8a593;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.breakfast__full,.toast__title,.muffin__title{
+  font-family: Alegreya,sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.breakfast__full{
+  margin-top: 60px;
+}
+
+.breakfast__text,.toast__text,.muffin__text{
+  color: #c2beba;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+
+.breakfast__text{
+  margin-top: 10px;
+}
+
+.breakfast__worth,.toast__price,.muffin__price{
+  font-family: Alegreya,sans-serif;
+  color: #dfc691;
+  font-size: 36px;
+  letter-spacing: 1.8px;
+  margin-top: 23px;
+}
+
+.breakfast__logo{
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.toast__text,.muffin__text{
+  margin-top: 13px;
+}
+
+.toast__price{
+  margin-top: 23px;
+}
+
+.muffin__title{
+  margin-top: 7px;
+}
+
+.breakfast__morning{
+  width: 465px;
+  position: relative;
+  right: -120px;
+  bottom: 10px;
+}
+
+.morning__container{
+  text-align: center;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  right: 45px;
+  bottom: 0;
+}
+
+.morning__since{
+  display: flex;
+  justify-content: space-between;
+  font-family: Alegreya,sans-serif;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  margin: 36px 88px 0;
+}
+
+.morning__logo{
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.morning__title{
+  font-family: Alegreya,sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.1px;
+  margin-top: 53px;
+}
+
+.morning__text{
+  line-height: 30px;
+  letter-spacing: 0.7px;
+  margin: 30px 20px;
+}
+
+.morning__button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #9e9c93;
+  padding: 9px 70px;
+  margin-top: 18px;
+  font-family: Alegreya,sans-serif;
+  color: #a47d5e;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.image__grain{
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+}

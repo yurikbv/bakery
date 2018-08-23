@@ -1,0 +1,73 @@
+.sandwich__outer{
+  background-color: #f3f1e9;
+}
+
+.sandwich{
+  @include wrapper;
+  text-align: center;
+}
+
+.sandwich__logo{
+  display: inline-block;
+}
+
+.sandwich__title,.sandwich__slogan{
+  font-family: Alegreya,sans-serif;
+  font-weight: 700;
+}
+
+.sandwich__title{
+  font-size: 48px;
+  margin-top: -44px;
+  letter-spacing: 1.2px;
+}
+
+.sandwich__slogan{
+  color: #a47d5e;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-top: 15px;
+}
+
+.sandwich__inner{
+  @include row-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -13px;
+}
+
+.sandwich__consist{
+  @include size(3);
+}
+
+.consist__item{
+  padding-bottom: 52px;
+}
+
+.consist__image{
+  display: inline-block;
+}
+
+.consist__title{
+  font-family: Alegreya,sans-serif;
+  color: #a47d5e;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.75px;
+  margin-top: 13px;
+}
+
+.consist__description{
+  letter-spacing: 1.4px;
+  line-height: 20px;
+  margin-top: 22px;
+}
+
+
+.sandwich__prepare{
+  @include col-padding;
+  @include size(8);
+}

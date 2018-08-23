@@ -1,9 +1,14 @@
 @include reset;
 
+.header__outer{
+
+}
+
 header{
   color: #ffffff;
   text-align: center;
   background: #3f403c url("../img/header-back.jpg") center top no-repeat;
+  background-size: cover;
 }
 
 .header__inner{
@@ -16,6 +21,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .logo{
     font-family: Scriptina,sans-serif;
     font-size: 30px;
@@ -31,6 +37,7 @@ header{
   .tilda{
     position: relative;
     left: 15px;
+    top: 4px;
   }
 }
 
@@ -151,3 +158,4 @@ header{
   background-color: #ffffff;
   border-radius: 50%;
 }
+
