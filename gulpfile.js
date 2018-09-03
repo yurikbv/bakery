@@ -22,16 +22,17 @@ const sourcemaps = require('gulp-sourcemaps');        //Показывает в 
 
 gulp.task('common-js', function() {
 	return gulp.src([
+    'app/js/hamburger.js',
+		'app/js/carousel.js',
 		'app/js/common.js'
 		])
 	.pipe(concat('common.min.js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		// 'app/libs/jquery/dist/jquery.min.js',
 		'app/js/common.min.js' // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

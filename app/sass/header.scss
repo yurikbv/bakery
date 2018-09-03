@@ -1,9 +1,5 @@
 @include reset;
 
-.header__outer{
-
-}
-
 header{
   color: #ffffff;
   text-align: center;
@@ -21,7 +17,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  @include lg(justify-content,center);
   .logo{
     font-family: Scriptina,sans-serif;
     font-size: 30px;
@@ -31,6 +27,27 @@ header{
   }
 }
 
+.menu{
+  @include lg-block{
+    position: fixed;
+    width: 200px;
+    top: 0;
+    height: 100%;
+    right: -200px;
+    background-color: rgba($color-default,.53);
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    .menu__item{
+      display: block;
+      border-bottom: 1px solid rgba(white,.8);
+    }
+  }
+}
+
+.menu__opened{
+  @include lg(right,0);
+}
+
 .menu__item{
   display: inline-block;
   margin: 0 15px;
@@ -38,11 +55,13 @@ header{
     position: relative;
     left: 15px;
     top: 4px;
+    @include lg(display,none);
   }
 }
 
 .menu__link{
   border: 1px solid transparent;
+  @include lg(border,none);
   box-sizing: border-box;
   display: inline-block;
   padding: 10px 20px;
@@ -55,6 +74,7 @@ header{
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
   &:hover{
+    @include lg(border,none);
     transition: all 0.2s ease-in-out;
     border: 1px solid rgba(white,.5);
     border-radius: 10px;
@@ -62,8 +82,30 @@ header{
   }
 }
 
+
+.menu-mobile{
+  border: 1px solid transparent;
+  border-radius: 10px;
+  &:hover{
+    border: 1px solid rgba(white,.5);
+    transition: all 0.2s ease-in-out;
+  }
+}
 .socials{
   margin-top: 5px;
+  @include lg-block{
+    position: fixed;
+    width: 200px;
+    right: -200px;
+    bottom: 0;
+    z-index: 11;
+    transition: all 0.3s ease-in-out;
+  };
+}
+
+.menu__opened ~ .socials{
+  right: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .socials__link{
@@ -94,6 +136,9 @@ header{
 .about__inner{
   @include wrapper;
   padding-bottom: 214px;
+  @include md(padding-bottom,180px);
+  @include sm(padding-bottom,100px);
+  @include xs(padding-bottom,70px);
 }
 
 .about__title{
@@ -104,11 +149,24 @@ header{
   letter-spacing: 6.5px;
   margin-top: 237px;
   text-shadow: 0 1px 0 #3d3029;
+  @include md-block{
+    font-size: 80px;
+    line-height: 1.65;
+  }
+  @include sm-block{
+    font-size: 60px;
+    margin-top: 150px;
+  }
+  @include xs-block{
+    font-size: 48px;
+    margin-top: 100px;
+  }
 }
 
 .about__line{
   display: inline-block;
   margin-top: 100px;
+  @include sm(margin-top,50px);
 }
 
 .about__slogan{
@@ -118,6 +176,7 @@ header{
   letter-spacing: 2.4px;
   margin: 50px auto 0;
   max-width: 550px;
+  @include sm(font-size,18px);
 }
 
 .about__menu{
@@ -158,4 +217,6 @@ header{
   background-color: #ffffff;
   border-radius: 50%;
 }
+
+
 

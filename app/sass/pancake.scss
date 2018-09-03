@@ -16,8 +16,9 @@
   width: 965px;
   position: relative;
   right: 50px;
+  filter: drop-shadow(0 25px 30px rgba(105, 80, 58, 0.45));
+  @include size-lg(11);
 }
-
 
 .pancakes__corner{
   position: absolute;
@@ -43,6 +44,8 @@
   bottom: 0;
   left: 420px;
   text-align: left;
+  @include md(position,static);
+  @include size-md(12);
 }
 
 .pancakes__about-inner{
@@ -87,6 +90,7 @@
 }
 
 .slider__button{
+  outline: none;
   position: absolute;
   width: 32px;
   height: 32px;
@@ -108,11 +112,15 @@
 
 .slider__gallery{
   overflow: hidden;
+  margin: 0 auto;
+  width: 360px;
+  @include lg(width,240px);
+  @include md(width,200px);
 }
 
 .slider__container{
-  position: absolute;
-  z-index: 2;
+  width: 9999px;
+  transition: margin-left 0.3s;
 }
 
 .slider__item{
@@ -126,6 +134,8 @@
 .slider__image{
   display: inline-block;
   border-radius: 50%;
+  width: 90px;
+  @include md(width,70px);
 }
 
 .pancakes__ready{

@@ -5,6 +5,7 @@
 .sandwich{
   @include wrapper;
   text-align: center;
+  padding-bottom: 65px;
 }
 
 .sandwich__logo{
@@ -68,6 +69,84 @@
 
 
 .sandwich__prepare{
-  @include col-padding;
+  margin-right: 15px;
   @include size(8);
+  position: relative;
+  margin-bottom: 30px;
+  //box-shadow: 0 10px 10px #000000;
+}
+
+.sandwich__image{
+  border: 10px solid #ffffff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.54);
+}
+
+.prepare__minutes{
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  height: 100%;
+  width: 200px;
+  text-align: center;
+}
+
+.prepare__item{
+  box-sizing: border-box;
+  background-color: rgba(white,.8);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1px;
+  padding-top: 35px;
+  &:last-child{
+    background: white url("../img/Vektor-Smartobjekt-yard.png") no-repeat right bottom ;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.54);
+  }
+}
+
+.prepare__title,.prepare__time,.prepare__min{
+  font-family: Alegreya,sans-serif;
+  font-weight: 700;
+}
+
+.prepare__title{
+  font-size: 18px;
+  color: #a47d5e;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.prepare__time{
+  font-size: 60px;
+  letter-spacing: 6px;
+  margin-top: 20px;
+}
+
+.prepare__min{
+  color: #979285;
+  letter-spacing: 1.8px;
+  margin-top: 20px;
+}
+
+.full__recipe{
+  cursor: pointer;
+  position: absolute;
+  left: -15px;
+  bottom: -10px;
+  border: 1px dashed #dfc691;
+  background-color: #ffffff;
+  font-family: Alegreya,sans-serif;
+  color: #dfc691;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  padding: 15px 25px;
+
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 5px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.54);
+  }
 }

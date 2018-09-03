@@ -140,6 +140,11 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.9px;
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 5px;
+  }
 }
 
 .image__grain{

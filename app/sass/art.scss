@@ -9,6 +9,8 @@
   @include row-flex;
   align-items: flex-start;
   margin-bottom: 100px;
+  @include lg(align-items,center);
+  @include sm(margin-bottom,50px);
 }
 
 .art__about,.art__images{
@@ -27,6 +29,7 @@
   font-size: 48px;
   font-weight: bold;
   letter-spacing: 1.2px;
+  @include sm(font-size,35px)
 }
 
 .art__slogan{
@@ -113,6 +116,7 @@
   flex-wrap: wrap;
   margin-top: 120px;
   position: relative;
+  @include sm(margin-top,60px);
 }
 
 .art__item{

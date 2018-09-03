@@ -1,0 +1,63 @@
+
+
+.menu-mobile{
+  position: fixed;
+  right: 20px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  background-color: rgba(black,.4);
+  border-radius: 10px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  @include lg(display,block);
+}
+
+.menu-mobile:focus{
+  outline: 1px solid deepskyblue;
+}
+
+.menu-mobile__opened{
+  right: 210px;
+  .menu-mobile__button{
+    background-color: transparent;
+  }
+  .menu-mobile__button:before{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .menu-mobile__button:after{
+    transform: rotate(45deg)translate(-5px,-6px);
+  }
+}
+
+.menu-mobile__button{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  bottom: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile__button:after,.menu-mobile__button:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile__button:before{
+  bottom: 8px;
+}
+
+.menu-mobile__button:after{
+  top: 8px;
+}
