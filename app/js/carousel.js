@@ -10,6 +10,7 @@
       this.nextButton = document.body.querySelector('.slider__button--right');
       this.prevButton.onclick =  this.prevImage.bind(this);
       this.nextButton.onclick =  () => this.nextImage();
+      this.list.onmousedown = (event) => this.mouseMove(event);
     }
     prevImage(){
       this.position = Math.min(this.position + this.width * this.count,0);
@@ -19,17 +20,23 @@
       this.position = Math.max(this.position - this.width * this.count , (-this.width * this.elements.length) + (this.width * this.count));
       this.list.style.marginLeft = this.position + 'px'
     }
+    mouseMove(event){
+      this.mouseCoordX = event.clientX;
+      this.list.onmouseup = (ev) => this.mouseUp(ev);
+    }
+    mouseUp(ev){
+      (ev.clientX < this.mouseCoordX) ? this.nextImage() : (ev.clientX > this.mouseCoordX) ? this.prevImage() : 0;
+    }
   }
 
-  let widthItem = 122,countItem = 3;
-  if(document.body.offsetWidth < 1100){
-    countItem = 2;
-  }
-  if(document.body.offsetWidth < 960){
-    // widthItem = 102;
-  }
+  let widthItem = 121.5;
+  let getCount = () => (document.body.offsetWidth < 1116 && document.body.offsetWidth > 976)
+      ? 2 : (document.body.offsetWidth < 976 && document.body.offsetWidth > 796)
+          ? 1 : (document.body.offsetWidth < 796 && document.body.offsetWidth > 576)
+              ? 4 : (document.body.offsetWidth < 576) ? 2 : 3;
+
   let carousel = new Carousel({
     width: widthItem,
-    count: countItem
+    count: getCount()
   });
 })();

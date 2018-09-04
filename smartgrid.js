@@ -25,7 +25,7 @@ let settings = {
       fields: '15px' /* set fields only if you want to change container.fields */
     },
     xs: {
-      width: '560px',
+      width: '580px',
       fields: '10px'
     }
     /*

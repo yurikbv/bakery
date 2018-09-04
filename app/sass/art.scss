@@ -119,6 +119,10 @@
   @include sm(margin-top,60px);
 }
 
+.art__photo{
+  @include sm(width,100%);
+}
+
 .art__item{
   @include col;
   @include size(6);

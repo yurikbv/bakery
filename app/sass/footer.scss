@@ -57,4 +57,5 @@ footer{
   font-size: 30px;
   line-height: 24px;
   letter-spacing: 9px;
+  @include sm(width,auto);
 }

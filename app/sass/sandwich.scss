@@ -6,6 +6,8 @@
   @include wrapper;
   text-align: center;
   padding-bottom: 65px;
+  @include lg(padding-bottom,0);
+  @include md(padding-bottom,40px);
 }
 
 .sandwich__logo{
@@ -21,6 +23,10 @@
   font-size: 48px;
   margin-top: -44px;
   letter-spacing: 1.2px;
+  @include sm-block{
+    font-size: 40px;
+    line-height: 2.2rem;
+  }
 }
 
 .sandwich__slogan{
@@ -37,14 +43,22 @@
   justify-content: space-between;
   align-items: center;
   margin-top: -13px;
+  @include md(margin-top,15px);
 }
 
 .sandwich__consist{
   @include size(3);
+  @include size-md(12);
+  @include md(display,flex);
+  @include xs-block{
+    flex-wrap: wrap;
+    justify-content: center;
+  };
 }
 
 .consist__item{
   padding-bottom: 52px;
+  @include size-xs(8);
 }
 
 .consist__image{
@@ -73,7 +87,7 @@
   @include size(8);
   position: relative;
   margin-bottom: 30px;
-  //box-shadow: 0 10px 10px #000000;
+  @include size-md(12);
 }
 
 .sandwich__image{
@@ -88,6 +102,17 @@
   height: 100%;
   width: 200px;
   text-align: center;
+  @include lg(top,-100px);
+  @include md(top,-15px);
+  @include sm-block{
+    width: 150px;
+    top: 0;
+  };
+  @include xs-block{
+    box-sizing: border-box;
+    top: -10px;
+    width: 310px;
+  };
 }
 
 .prepare__item{
@@ -100,6 +125,16 @@
   &:last-child{
     background: white url("../img/Vektor-Smartobjekt-yard.png") no-repeat right bottom ;
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.54);
+  }
+  @include sm-block{
+    width: 150px;
+    height: 150px;
+    padding-top: 15px;
+  };
+  @include xs-block{
+    width: 100px;
+    display: inline-block;
+    height: 120px;
   }
 }
 
@@ -114,18 +149,24 @@
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 1.8px;
+  @include sm(font-size,14px);
 }
 
 .prepare__time{
   font-size: 60px;
   letter-spacing: 6px;
   margin-top: 20px;
+  @include sm-block{
+    font-size: 40px;
+    margin-top: 5px;
+  }
 }
 
 .prepare__min{
   color: #979285;
   letter-spacing: 1.8px;
   margin-top: 20px;
+  @include xs(margin-top,10px);
 }
 
 .full__recipe{

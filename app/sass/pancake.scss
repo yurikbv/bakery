@@ -8,6 +8,7 @@
   @include wrapper;
   text-align: center;
   padding-bottom: 100px;
+  @include xs(padding-bottom,30px)
 }
 
 .pancakes__block{
@@ -18,12 +19,26 @@
   right: 50px;
   filter: drop-shadow(0 25px 30px rgba(105, 80, 58, 0.45));
   @include size-lg(11);
+  @include sm-block{
+    width: auto;
+    position: static;
+  }
+  @include xs(margin-top,60px);
+}
+
+.pancakes__image{
+  @include sm(position,relative);
+}
+
+.pancakes__photo{
+  @include sm(width,100%);
 }
 
 .pancakes__corner{
   position: absolute;
   left: 0;
   bottom: 0;
+  @include sm(display,none);
 }
 
 .pancakes__rating{
@@ -33,6 +48,9 @@
   img{
     width: 22px;
     margin-bottom: 9px;
+  }
+  @include xs-block{
+    top: 20px;
   }
 }
 
@@ -44,8 +62,7 @@
   bottom: 0;
   left: 420px;
   text-align: left;
-  @include md(position,static);
-  @include size-md(12);
+  @include sm(position,static);
 }
 
 .pancakes__about-inner{
@@ -55,6 +72,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @include md(padding,0 40px);
+  @include sm(text-align,center);
 }
 
 .pancakes__title{
@@ -63,6 +82,12 @@
   letter-spacing: 1.2px;
   font-weight: 700;
   padding-top: 86px;
+  @include lg-block{
+    padding-top: 50px;
+    line-height: 1.8rem;
+  };
+  @include md(padding-top,40px);
+  @include sm(font-size,35px)
 }
 
 .pancakes__description{
@@ -79,14 +104,23 @@
 .pancakes__text{
   line-height: 24px;
   letter-spacing: 1.4px;
-  margin-top: 52px;
+  margin-top: 30px;
+  @include sm(padding-bottom,30px);
 }
 
 .pancakes__slider{
   position: relative;
-  margin-top: auto;
   height: 90px;
-  padding: 0 32px 40px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 360px;
+  @include lg(width,240px);
+  @include md(width,120px);
+  @include sm-block{
+    width: 480px;
+    text-align: left;
+  };
+  @include xs(width,240px);
 }
 
 .slider__button{
@@ -103,24 +137,20 @@
 }
 
 .slider__button--left{
-  left: 0;
+  left: -32px;
 }
 
 .slider__button--right{
-  right: 0;
+  right: -32px;
 }
 
 .slider__gallery{
   overflow: hidden;
-  margin: 0 auto;
-  width: 360px;
-  @include lg(width,240px);
-  @include md(width,200px);
 }
 
 .slider__container{
   width: 9999px;
-  transition: margin-left 0.3s;
+  transition: margin-left 0.6s;
 }
 
 .slider__item{
@@ -135,7 +165,6 @@
   display: inline-block;
   border-radius: 50%;
   width: 90px;
-  @include md(width,70px);
 }
 
 .pancakes__ready{
@@ -151,6 +180,15 @@
   background: #f4f2f0 url("../img/Vektor-Smartobjekt-yard.png") no-repeat right bottom;
   padding-bottom: 27px;
   box-shadow: 0 25px 54px rgba(105, 80, 58, 0.45);
+  @include md(top,-140px);
+  @include sm-block{
+    right: 10px;
+    top: -43px;
+  }
+  @include xs-block{
+    width: 100px;
+    padding-bottom: 15px;
+  }
 }
 
 .ready__title{
@@ -158,6 +196,10 @@
   color: #a47d5e;
   text-transform: uppercase;
   margin-top: 28px;
+  @include xs-block{
+    margin-top: 15px;
+    font-size: 14px;
+  };
 }
 
 .ready__time{
@@ -165,6 +207,10 @@
   font-size: 92px;
   margin-top: 42px;
   letter-spacing: 6px;
+  @include xs-block{
+    font-size: 40px;
+    margin-top: 5px;
+  };
 }
 
 .ready__minutes{
@@ -172,5 +218,9 @@
   margin-top: 32px;
   font-size: 16px;
   letter-spacing: 3px;
+  @include xs-block{
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }
 

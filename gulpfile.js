@@ -24,6 +24,7 @@ gulp.task('common-js', function() {
 	return gulp.src([
     'app/js/hamburger.js',
 		'app/js/carousel.js',
+		'app/js/fullImage.js',
 		'app/js/common.js'
 		])
 	.pipe(concat('common.min.js'))

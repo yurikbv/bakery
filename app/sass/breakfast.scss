@@ -8,12 +8,18 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 100px 0 60px;
+  @include xs(padding,30px 0 30px);
 }
 
 .breakfast__price{
   text-align: center;
   margin-left: 110px;
+  @include size-lg(6);
+  @include size-sm(12);
+  @include lg(margin-left,0);
+  @include sm(padding-bottom,30px);
 }
 .breakfast__title,.breakfast__open{
   font-family: Alegreya,sans-serif;
@@ -25,6 +31,7 @@
   color: #ffffff;
   font-size: 60px;
   letter-spacing: 3px;
+  @include md(font-size,40px);
 }
 
 .breakfast__open{
@@ -33,6 +40,7 @@
   letter-spacing: 0.9px;
   text-transform: uppercase;
   margin-top: 15px;
+  @include md(font-size,16px);
 }
 
 .breakfast__full,.toast__title,.muffin__title{
@@ -41,16 +49,19 @@
   font-size: 30px;
   letter-spacing: 1.5px;
   font-weight: bold;
+  @include md(font-size,26px);
 }
 
 .breakfast__full{
   margin-top: 60px;
+  @include md(margin-top,40px);
 }
 
 .breakfast__text,.toast__text,.muffin__text{
   color: #c2beba;
   font-size: 16px;
   letter-spacing: 0.8px;
+  @include md(font-size,14px);
 }
 
 .breakfast__text{
@@ -63,6 +74,10 @@
   font-size: 36px;
   letter-spacing: 1.8px;
   margin-top: 23px;
+  @include md-block{
+    font-size:30px;
+    margin-top: 8px;
+  };
 }
 
 .breakfast__logo{
@@ -85,8 +100,18 @@
 .breakfast__morning{
   width: 465px;
   position: relative;
-  right: -120px;
+  right: -80px;
   bottom: 10px;
+  @include size-lg(6);
+  @include size-sm(8);
+  @include size-xs(10);
+  @include lg(right,0);
+}
+
+.morning__image{
+  @include sm-block{
+    height: 100%;
+  }
 }
 
 .morning__container{
@@ -96,6 +121,11 @@
   top: 10px;
   right: 45px;
   bottom: 0;
+  @include md-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .morning__since{
@@ -105,6 +135,7 @@
   letter-spacing: 0.7px;
   font-weight: 700;
   margin: 36px 88px 0;
+  @include md(width,60%);
 }
 
 .morning__logo{
@@ -119,12 +150,18 @@
   line-height: 60px;
   letter-spacing: 1.1px;
   margin-top: 53px;
+  @include md-block{
+    font-size: 36px;
+    margin-top: 20px;
+  };
 }
 
 .morning__text{
   line-height: 30px;
   letter-spacing: 0.7px;
   margin: 30px 20px;
+  @include md(margin,10px 20px);
+  @include sm(margin,10px 0);
 }
 
 .morning__button{
@@ -145,6 +182,8 @@
     transition: all 0.2s ease-in-out;
     text-shadow: 2px 2px 5px;
   }
+  @include sm(margin,auto 0 60px 0);
+  @include xs(margin-bottom,30px);
 }
 
 .image__grain{
