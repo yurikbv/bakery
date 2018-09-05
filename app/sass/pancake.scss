@@ -155,16 +155,17 @@
 
 .slider__item{
   display: inline-block;
-}
-
-.slider__link{
-  margin: 0 14px;
+  user-select: none;
 }
 
 .slider__image{
   display: inline-block;
   border-radius: 50%;
   width: 90px;
+  margin: 0 14px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .pancakes__ready{
